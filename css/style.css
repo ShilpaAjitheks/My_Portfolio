@@ -360,32 +360,33 @@ Animation keyframes
   }
 }
 
-*typed js*/
+/*typed js*/
+
 .sortcut.text-center {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .header-typed {
-    margin-top: 180px;
-    text-align: left;
-    margin-left: 5%;
+  margin-top: 180px;
+  text-align: left;
+  margin-left: 5%;
 }
 .header-typed h1{
-    color: #fff;
+  color: #fff;
 }
 .header-typed h4{
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-top: 30px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 30px;
 }
 
 
 .header-typed a{
-    color: #39D0A1;
-    font-weight: 500;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-family: 'Caprasimo', cursive;
+  text-decoration: none;
 }
 .top-button{
     background-color: #39D0A1;
@@ -412,7 +413,7 @@ Animation keyframes
   color: #d44b15;
   text-align: center;
   font-size: 1em;
-  font-family: "Poppins", sans-serif;
+  font-family:"Poppins", sans-serif;
 }
 
 .had-r1 {
@@ -422,7 +423,7 @@ Animation keyframes
 }
 
 .had-amp {
-  color: #fff;
+  color:#39D0A1;
   font-size: 3em;
   font-style: italic;
   vertical-align: bottom;
