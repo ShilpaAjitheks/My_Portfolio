@@ -28,7 +28,6 @@ $('.open-overlay').click(function() {
     }
   });
 
-//type.js
 
 //type.js
 
