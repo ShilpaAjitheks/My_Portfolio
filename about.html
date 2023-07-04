@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- <link rel="stylesheet" href="./css/bootstrap.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 <body>
     <nav>
         <h1>SHILPA</h1>
@@ -51,7 +53,7 @@
     <section class="more-about">
         <h2>More About Me</h2>
             <p>
-                After completing my PG, I embarked on my career as an Assistant Professor. However, becoming a Data Scientist 
+                After completing my PG, I embarked on my career as an Assistant Professor. However, becoming a AI Engineer 
                 has always been my ultimate aspiration. Therefore, after gaining three years of valuable experience 
                 in the teaching field, I am now actively seeking out opportunities to pursue my dream job. And now, 
                 here I am, brimming with unwavering passion and unwavering dedication.
@@ -153,7 +155,7 @@
           </div>
           <div class="project-container project-card">
                 <img
-                src="https://camo.githubusercontent.com/756cb0b45bbc3135cc2e7de82acfbd951798077a432f7c4e12a9c012e3475f19/68747470733a2f2f7777772e696d70657269616c2e61632e756b2f496d61676543726f70546f6f6c54342f696d616765546f6f6c2f75706c6f616465642d696d616765732f68656172742d696c6c757374726174696f6e2d2d746f6a7065675f313439303238333731363338345f78322e6a7067"
+                src="./image/cardio.jpg"
                 alt="cvd"
                 loading="lazy"
                 class="project-pic"
@@ -162,7 +164,6 @@
                 <p class="project-details">
                   The objective of this project is to develop a machine learning model 
                   that can predict the risk of Cardiovascular diseases (CVDs) in individuals based on their health data.
-                  The dataset used for this project is the “Cardiovascular Disease dataset” from Kaggle.
                 </p>
                 <a href="https://github.com/ShilpaAjitheks/Machine_Learning_Pro/tree/master/Cardiovascular_Disease_Prediction_" target="_blank" class="project-link">Check it Out</a>
           </div>
@@ -285,13 +286,13 @@
             <h2>Get In Touch With Me</h2>
             <div class="contact-form-container">
               <div class="contact-form">
-                <form action="#https://formspree.io/f/xyylngw" method="POST">
+                <form id="submit-form" action="">
                   <div class="form-control">
                     <label for="name">Name</label>
                     <input
                       type="text"
                       id="name"
-                      name="sender-name"
+                      name="name"
                       placeholder="Enter Your Name"
                       class="input-field"
                       required
@@ -302,7 +303,7 @@
                     <input
                       type="email"
                       id="email"
-                      name="sender-email"
+                      name="email"
                       placeholder="Enter Your Email"
                       class="input-field"
                       required
@@ -365,7 +366,7 @@
             >Shilpa Ajith</a
           >
         </p>
-  </footer>
+    </footer>
         
     <!-- Website scripts -->
     <script src="./js/app.js"></script>
@@ -373,6 +374,24 @@
         <!-- Ion icons scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              url:"https://script.google.com/macros/s/AKfycbwFvOQXZFp4Ar-DOvUSjuQ1J8aWX9XyB57MzWGF0B2mdqdODmxWZHf0CbsH6qV2hLqQ/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
 </body>
 </html>
