@@ -355,4 +355,27 @@ nav ul li {
     margin: 2rem 0 0;
   }
 
+  @media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 17.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+    
+    .timeline_container{
+        max-width: 17.75rem;      
+    }
+  } 
+
 
