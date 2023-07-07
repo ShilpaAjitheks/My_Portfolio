@@ -4,7 +4,7 @@
 }
 body {
  
-  /* background-image: url(../image/businesswomen.jpg); */
+  background-image: url(../image/businesswomen_m8icbl_c_scale\,w_584.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -361,21 +361,7 @@ Animation keyframes
   }
 }
 
-@media (max-width: 480px) {
-  body {
-      background-image: url(/image/businesswomen_m8icbl_c_scale\,w_584.jpg);
-  }
-}
-@media (min-width: 481px) and (max-width: 1024px) {
-  body {
-      background-image: url(/image/businesswomen_m8icbl_c_scale\,w_976.jpg);
-  }
-}
-@media (min-width: 1025px) {
-  body {
-    background-image: url(/image/businesswomen_m8icbl_c_scale\,w_1000.jpg);
- }
-}
+
 /*typed js*/
 
 .sortcut.text-center {
