@@ -430,6 +430,7 @@ nav ul li {
     
     .more-about p {
         text-align: justify;
+        font-size: 0.95rem;
     }
     .icon {
         width: 5.875rem;
