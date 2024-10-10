@@ -566,13 +566,13 @@ li {
 
 .card-content h3 {
     color: #b19cff; /* Light purple link color */
-    font-size: 1.3rem; /* Slightly smaller font size */
+    font-size: 1.4rem; /* Slightly smaller font size */
     margin: 0;
 }
 
 .card-content-super-title {
     color: #85b0b6; /* Light teal for sub-title */
-    font-size: 0.95rem; /* Smaller font size */
+    font-size: 1rem; /* Smaller font size */
 }
 
 .card-content-metadata {
@@ -584,7 +584,7 @@ li {
 }
 
 .card-content-metadata li {
-    font-size: 0.75rem; /* Slightly smaller font size */
+    font-size: 0.85rem; /* Slightly smaller font size */
     color: #ffffff; /* Text color for earned and expiration details */
     /* line-height: 1.2;  */
     /*Reduced line height to remove extra spacing*/
@@ -600,7 +600,7 @@ a.card-content-title:hover h3 {
 }
 
 a.font-size-sm {
-    font-size: 0.75rem; /* Reduced link font size */
+    font-size: 0.85rem; /* Reduced link font size */
     color: #85b0b6;
     text-decoration: none;
 }
@@ -612,7 +612,7 @@ a.font-size-sm:hover {
 /* Status Tags */
 .tag {
     padding: 5px 8px; /* Reduced padding for tags */
-    font-size: 0.76rem; /* Slightly smaller font size */
+    font-size: 0.86rem; /* Slightly smaller font size */
     border-radius: 10px;
     display: inline-block;
 }
