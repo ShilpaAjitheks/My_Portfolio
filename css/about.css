@@ -478,4 +478,150 @@ nav ul li {
     }
   } 
 
+/* General layout for certification */
+#certifications-dashboard-certifications {
+    background-color: #1b2b35; /* Matches the dark background */
+    padding: 20px; /* Reduced padding */
+}
+
+#certifications-dashboard-certifications-title {
+    color: white; /* White title */
+    font-size: 1.6rem; /* Reduced font size */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px; /* Reduced padding */
+    /* border-bottom: 1px solid #3a4b55; Thin border to match card separation */
+}
+
+/* Certification card styling */
+.certifications-certification {
+    display: flex;
+    background-color: #102028; /* Dark blue card background */
+    color: white;
+    padding: 40px; /* Reduced padding inside the card */
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 700px;  */
+    /* Reduced width */
+}
+
+.card-header-image img {
+    width: 100px; /* Reduced image size */
+    height: auto;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding-left: 15px; /* Reduced padding between image and text */
+}
+
+.card-content h3 {
+    color: #b19cff; /* Light purple link color */
+    font-size: 1.3rem; /* Slightly smaller font size */
+    margin: 0;
+}
+
+.card-content-super-title {
+    color: #85b0b6; /* Light teal for sub-title */
+    font-size: 0.95rem; /* Smaller font size */
+}
+
+.card-content-metadata {
+    display: flex; /* Make dates in a row */
+    flex-direction: row-reverse;
+    justify-content: space-between; /* Align dates in a row */
+    gap: 10px; /* Add small space between dates */
+    margin-top: 5px; /* Reduced margin */
+}
+
+.card-content-metadata li {
+    font-size: 0.75rem; /* Slightly smaller font size */
+    color: #ffffff; /* Text color for earned and expiration details */
+    /* line-height: 1.2;  */
+    /*Reduced line height to remove extra spacing*/
+    /* margin-top: 0px; */
+}
+
+a.card-content-title {
+    text-decoration: none;
+}
+
+a.card-content-title:hover h3 {
+    text-decoration: underline;
+}
+
+a.font-size-sm {
+    font-size: 0.75rem; /* Reduced link font size */
+    color: #85b0b6;
+    text-decoration: none;
+}
+
+a.font-size-sm:hover {
+    text-decoration: underline;
+}
+
+/* Status Tags */
+.tag {
+    padding: 5px 8px; /* Reduced padding for tags */
+    font-size: 0.76rem; /* Slightly smaller font size */
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.background-color-primary-light {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+.is-success {
+    background-color: #5dbb63; /* Green color for active status */
+    color: white;
+}
+
+/* For mobile */
+@media screen and (max-width: 768px) {
+    .certifications-certification {
+        flex-direction: column;
+    }
+
+    .card-header-image img {
+        width: 35px;
+        margin-bottom: 8px;
+    }
+
+    .card-content {
+        padding-left: 0;
+    }
+
+    .display-none-desktop {
+        display: flex;
+    }
+    
+    .display-flex-desktop {
+        display: none;
+    }
+}
+
+/* For desktop */
+@media screen and (min-width: 769px) {
+    .display-none-desktop {
+        display: none;
+    }
+
+    .display-flex-desktop {
+        display: flex;
+    }
+}
+
+
 
