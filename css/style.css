@@ -15,6 +15,20 @@ body {
   font-family: "Poppins", sans-serif;
     
 }
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.50);
+  z-index: 0;
+}
+
+.header-typed {
+  position: relative;
+  z-index: 1; /* lift content above overlay */
+}
+
 /* ====================================
 Navigation 
 ==================================== */
@@ -369,49 +383,80 @@ Animation keyframes
 }
 .header-typed {
   margin-top: 180px;
-  text-align: left;
-  margin-left: 5%;
+  text-align: center;
 }
 .header-typed h1{
   color: #fff;
 }
-.header-typed h4{
+/* .header-typed h4{
   color: #fff;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   margin-top: 30px;
+} */
+.header-typed h4 {
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-.header-typed a{
+/* .header-typed a{
   color: white;
   font-weight: 500;
   font-family: 'Caprasimo', cursive;
   text-decoration: none;
+} */
+
+.header-typed a {
+  color: #39D0A1;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
+
+.typewrite > .wrap {
+  border-right: 0.08em solid #39D0A1;  /* was white — match new color */
+}
+
 .top-button{
     background-color: #39D0A1;
-    border: none;
-    padding: 10px 25px 10px 25px;
+    border: 2px solid #39D0A1;
+    padding: 12px 32px;
     margin-top: 16px;
     border-radius: 20px;
     color: #fff;
     transform: scale(1);
     transition: .5s;
     margin-left: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    cursor: pointer;
 }
 .top-button:hover{
     background-color: #222;
-    border: none;
-    padding: 10px 25px 10px 25px;
+    border: 2px solid #222;
+    padding: 10px 25px;
     margin-top: 16px;
     border-radius: 20px;
     color: #fff;
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: .5s;
 }
-.had {
+/* .had {
   color: #d44b15;
   text-align: center;
   font-size: 1em;
@@ -422,7 +467,23 @@ Animation keyframes
   line-height: 1em;
   font-size: 7em;
   font-weight: 100;
+} */
+
+.had {
+  color: #ffffff;          /* was #d44b15 */
+  text-align: center;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
 }
+
+.had-r1 {
+  line-height: 1.1em;
+  font-size: 4.5em;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
 
 .had-amp {
   color:#39D0A1;
@@ -430,6 +491,30 @@ Animation keyframes
   font-style: italic;
   vertical-align: bottom;
   margin: 0 -0.3em;
+}
+
+.top-button-outline {
+  background-color: #39D0A1;
+  border: 2px solid #39D0A1;
+  color: #fff;
+}
+.top-button-outline:hover {
+  background-color: #222;
+  border: 2px solid #222;
+  color: #fff;
+}
+
+.role-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #39D0A1;
+  border: 1px solid #39D0A1;
+  border-radius: 20px;
+  padding: 4px 14px;
+  margin-bottom: 16px;
 }
 
 
