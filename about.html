@@ -614,20 +614,18 @@
     <script>
       $("#submit-form").submit((e)=>{
           e.preventDefault()
-          $.ajax({
-              url:"https://script.google.com/macros/s/AKfycbwFvOQXZFp4Ar-DOvUSjuQ1J8aWX9XyB57MzWGF0B2mdqdODmxWZHf0CbsH6qV2hLqQ/exec",
-              data:$("#submit-form").serialize(),
-              method:"post",
-              success:function (response){
-                  alert("Form submitted successfully")
-                  window.location.reload()
-                  //window.location.href="https://google.com"
-              },
-              error:function (err){
-                  alert("Something Error")
-  
-              }
-          })
+            fetch("https://script.google.com/macros/s/AKfycbwFvOQXZFp4Ar-DOvUSjuQ1J8aWX9XyB57MzWGF0B2mdqdODmxWZHf0CbsH6qV2hLqQ/exec", {
+                method: "POST",
+                body: new URLSearchParams($("#submit-form").serialize())
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert("Form submitted successfully");
+                window.location.reload();
+            })
+            .catch(error => {
+                alert("Something went wrong. Please try again.");
+            });
       })
     </script>
     <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" 
